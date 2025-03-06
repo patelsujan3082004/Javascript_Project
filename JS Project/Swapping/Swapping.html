@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapping number</title>
+    <script src="Swapping.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #2193b0, #6dd5ed);
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2193b0;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .input {
+            margin-bottom: 1.5rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #2193b0;
+            border-radius: 5px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #6dd5ed;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #2193b0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #1a7a94;
+        }
+
+        .result {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: #f0f9ff;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 1.1rem;
+            color: #2193b0;
+            min-height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Swapping</h1>
+        <div class="input">
+            <input type="number" id="num1" placeholder="Enter first number">
+        </div>
+        <div class="input">
+            <input type="number" id="num2" placeholder="Enter second number">
+        </div>
+        <button onclick="swapNumbers()">Swap Numbers</button>
+        <div class="result" id="result"></div>
+    </div>
+
+</body>
+
+</html>

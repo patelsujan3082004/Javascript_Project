@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculator</title>
+    <script src="simple_calculator.js" defer></script>
+    <style>
+        .calculator {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .calculator h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .Value {
+            margin-bottom: 10px;
+        }
+        .Value label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .Value input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .buttons button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="calculator">
+        <h2>Simple Calculator</h2>
+        <div class="Value">
+            <label for="num1">Number 1:</label>
+            <input type="number" id="num1" required>
+        </div>
+        <div class="Value">
+            <label for="num2">Number 2:</label>
+            <input type="number" id="num2" required>
+        </div>
+        <div class="buttons">
+            <button type="button" onclick="add()">+</button>
+            <button type="button" onclick="subtract()">-</button>
+            <button type="button" onclick="multiply()">*</button>
+            <button type="button" onclick="divide()">/</button>
+            <button onclick="modulo()">%</button>   
+        </div>
+        <div class="result" id="result">Result: 0</div>
+
+</body>
+</html>
