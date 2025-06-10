@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-container">
+    <div class="weather-header">
+      <div class="location-info">
+        <h1 id="city">Weather</h1>
+        <p id="date">--</p>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button onclick="fetchWeather()">Search</button>
+      </div>
+    </div>
+
+    <div class="weather-main">
+      <div class="temp-info">
+        <h2 id="temperature">--</h2>
+        <span class="unit">°C</span>
+        <p id="weather-desc">--</p>
+      </div>
+      <div class="icon-and-details">
+        <img id="weather-icon" src="" alt="icon" class="weather-icon" />
+        <ul class="details">
+          <li>🌡️ Feels like: <span id="feels-like">--</span></li>
+          <li>💧 Humidity: <span id="humidity">--</span></li>
+          <li>🌬️ Wind: <span id="wind">--</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="forecast" id="forecast"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- const apiKey = "a516a792024accb77f34519e395792f4";
+const apiUrl =
+  "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
+const appId = `&appid=${apiKey}`; -->
